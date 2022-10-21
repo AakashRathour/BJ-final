@@ -1,0 +1,620 @@
+@font-face {
+    font-display: optional;
+    font-family: $lightfont;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-regular.woff2');
+}
+@font-face {
+    font-display: optional;
+    font-family: $boldfont;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-bold.woff2');
+}
+@font-face {
+    font-family: 'BJ-medium';
+    src: url('../fonts/Mulish-Medium.eot');
+    src: url('../fonts/Mulish-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-Medium.woff2') format('woff2'),
+        url('../fonts/Mulish-Medium.woff') format('woff'),
+        url('../fonts/Mulish-Medium.ttf') format('truetype'),
+        url('../fonts/Mulish-Medium.svg#Mulish-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BJ-exbold';
+    src: url('../fonts/Mulish-ExtraBold.eot');
+    src: url('../fonts/Mulish-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Mulish-ExtraBold.woff') format('woff'),
+        url('../fonts/Mulish-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Mulish-ExtraBold.svg#Mulish-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BJ-exlight';
+    src: url('../fonts/Mulish-ExtraLight.eot');
+    src: url('../fonts/Mulish-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fontsMulish-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Mulish-ExtraLight.woff') format('woff'),
+        url('../fonts/Mulish-ExtraLight.ttf') format('truetype'),
+        url('../fonts/Mulish-ExtraLight.svg#Mulish-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $BJ-regular;
+    src: url('../fonts/Mulish-Regular.eot');
+    src: url('../fonts/Mulish-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-Regular.woff2') format('woff2'),
+        url('../fonts/Mulish-Regular.woff') format('woff'),
+        url('../fonts/Mulish-Regular.ttf') format('truetype'),
+        url('../fonts/Mulish-Regular.svg#Mulish-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BJ-black';
+    src: url('../fonts/Mulish-Black.eot');
+    src: url('../fonts/Mulish-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-Black.woff2') format('woff2'),
+        url('../fonts/Mulish-Black.woff') format('woff'),
+        url('../fonts/Mulish-Black.ttf') format('truetype'),
+        url('../fonts/Mulish-Black.svg#Mulish-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BJ-bold';
+    src: url('../fonts/Mulish-Bold.eot');
+    src: url('../fonts/Mulish-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-Bold.woff2') format('woff2'),
+        url('../fonts/Mulish-Bold.woff') format('woff'),
+        url('../fonts/Mulish-Bold.ttf') format('truetype'),
+        url('../fonts/Mulish-Bold.svg#Mulish-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BJ-semibold';
+    src: url('../fonts/Mulish-SemiBold.eot');
+    src: url('../fonts/Mulish-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-SemiBold.woff2') format('woff2'),
+        url('../fonts/Mulish-SemiBold.woff') format('woff'),
+        url('../fonts/Mulish-SemiBold.ttf') format('truetype'),
+        url('../fonts/Mulish-SemiBold.svg#Mulish-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BJ-light';
+    src: url('../fonts/Mulish-Light.eot');
+    src: url('../fonts/Mulish-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mulish-Light.woff2') format('woff2'),
+        url('../fonts/Mulish-Light.woff') format('woff'),
+        url('../fonts/Mulish-Light.ttf') format('truetype'),
+        url('../fonts/Mulish-Light.svg#Mulish-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+    overflow-x: hidden;  
+}
+
+body{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    font-family: $BJ-regular;
+    color: $bodyclr;
+    overflow-x: hidden;
+}
+a{
+    color: $bodyclr;
+    transition: .2s ease-in-out;
+    &:hover, &:active{
+        text-decoration: none;
+        transition: .2s ease-in-out;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: $BJ-bold;
+    letter-spacing: 0.8px;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 22px;
+}
+h3,h4,h5,h6{
+    font-size: 16.5px;
+}
+p{
+    margin-bottom: 10px;
+}
+span{
+    font-family: $BJ-regular;
+}
+.fs-12{
+    font-size: 12px;
+}
+ul,ol{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+    li{
+        margin-bottom: 4px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.b-t-1{
+    border-top: 1px solid #ebebeb;
+}
+img {
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+.boldfont{
+    font-family: $BJ-bold!important;
+    letter-spacing: 1px;
+}
+.headingfont{
+    font-size: 16px;
+}
+.whitebg{
+    background-color: #fff;
+}
+.greybg{
+    background-color: #f6f6f6!important;
+}
+.offwhitetext{
+    color: $offwhitetext;
+}
+.imgFilterInvert{
+    filter: invert(100%);
+}
+.no-margin{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.no-padding{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.sectionpadding15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sectionpadding20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sectionpadding25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.sectionbtmpadding30{
+    padding-bottom: 30px;
+}
+.m-t-16{
+    margin-top: 16px!important;
+}
+.m-b-16{
+    margin-bottom: 16px!important;
+}
+.borderBtn{
+    border: 1px solid $primaryclr;
+    color: $primaryclr;
+    padding: 0 10px;
+    border-radius: 0;
+    line-height: 36px;
+    display: block;
+    @include oneline;
+    @media (max-width:600px){
+        text-transform: unset!important;
+        font-size: 13px;
+    }
+}
+.sectionHeading{
+    margin-bottom: 32px;
+    @media (max-width:767px){
+        margin-bottom: 20px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 28px;
+        font-family: $BJ-bold;
+        @media (max-width:767px){
+            font-size: 18px;
+        }
+    }
+    a{
+        color: $linkclr;
+        font-weight: 600;
+    }
+    &.sectionSubHeading{
+        h2,h3,h4,h5,h6{
+            font-size: 18px;
+        }
+    }
+}
+.socialMedia{
+    li,a{
+        display: inline-block;
+        margin-right: 8px;
+        &:last-child{
+            margin-right: 0;
+            img{
+                height: 25px;
+                width: 100%;
+            }
+        }
+        img{
+            width: 25px;
+        }
+    }
+    &.newsSinglePage-share{
+        span{
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+.sectionShadow{
+    box-shadow: 0 4px 20px rgba(0,0,0,.10);
+}
+.sectionShadow1{
+    box-shadow: 0 1px 10px rgba(0,0,0,.05);
+}
+.row, .tj-row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+.tj-col, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.form-control{
+    border-radius: 0;
+    font-size: 14px;
+    height: 38px;
+    line-height: 40px;
+    padding: 0 10px;
+    letter-spacing: .5px;
+}
+textarea{
+    min-height: 108px;
+}
+select.form-control{
+    appearance: none;
+    background-image: url('../images/icons/caret-down.svg');
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position-x: 97.5%;
+    background-position-y: 55%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.fillBtn{
+    @include oneline;
+    background-color: $primaryclr;
+    border: 1px solid $primaryclr;
+    font-size: 16px;
+    line-height: 36px;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 0;
+    color: #fff;
+    font-family: $BJ-medium;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    transition: .2s ease-in-out;
+    border-radius: 4px;
+    @media (max-width:600px){
+        text-transform: unset;
+        font-size: 13px;
+    }
+    &:hover{
+        color: #fff;
+        background-color: $secondaryclr;
+        transition: .2s ease-in-out;
+    }
+}
+.container-mid{
+    max-width: 1280px;
+    width: 98%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (min-width:1440px){
+        max-width: 1400px;
+    }
+}
+.container-mid-mobileFull{
+    @media (max-width:800px){
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.viewall{
+    a{
+        color: $linkclr;
+    }
+    img{
+        width: 12px;
+        margin-left: 3px;
+        position: relative;
+        top: -0.5px;
+    }
+}
+.stickyBar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.linkclr{
+    color: $linkclr;
+}
+.oneline{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ad-grid{
+    span{
+        position: absolute;
+        background: #fff;
+        top: 10px;
+        left: 10px;
+        font-size: 10px;
+        padding: 0 8px;
+    }
+}
+.video-ad{
+    height: 580px;
+    @media (max-width:767px){
+        height: 200px;
+    }
+    video{
+        object-fit: cover;
+    }
+}
+.img-contain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    &.img-cover{
+        object-fit: cover;
+    }
+}
+.gMap iframe {
+    width: 100%;
+    height: 350px;
+    padding: 10px 10px 5px;
+    border-radius: 3px;
+  }
+.brandsBlock-single{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media (min-width:451px) and (max-width:650px){
+    .brandsBlock-single{ flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  } 
+  }
+  @media (min-width:651px) and (max-width:900px){
+    .brandsBlock-single {flex: 0 0 25%;
+    max-width: 25%;
+   }
+  }
+  .topSellButton {
+  .header-sell-btn {
+      background-color:#006DB7;
+      color: #fff;
+      padding: 9px 22px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-family: TJ-bold;
+      letter-spacing: 1px;
+      :hover {
+        color: #fff;
+        background-color: #333;
+        transition: 0.2s ease-in-out;
+      }
+    }
+}
+    
+     
+    
+    .explore-slider {
+        .newTruckBlock-content {
+            padding: 10px 5px 5px 5px;
+            background: #fff;
+            }
+            button:focus {
+                outline: none;
+              }
+        .slick-prev {
+        color: transparent;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border: none;
+        background: #FFFFFF;
+        opacity: 0.6;
+        border-radius: 50%;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .slick-prev {
+            img {
+            transform: rotate(90deg);
+          }
+          :hover {
+            opacity: 1;
+          }
+        }
+        .slick-next {
+            color: transparent;
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border: none;
+            background: #FFFFFF;
+            opacity: 0.6;
+            border: none;
+            border-radius: 50%;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                transform: rotate(270deg);
+              }
+              :hover {
+                opacity: 1;
+              }
+          }
+    }
+    
+    
+    
+
+   
+  
+   /* ad pop*/
+   .add-txt-btn {
+    padding: 5px;
+    position: absolute;
+      text-align: right;
+      width: 100%;
+  }
+   .ad-pop {
+    position: fixed;
+    right: -300px;
+    z-index: 99999;
+    top: 50%;
+    background: #fff;
+    transition: 0.5s;
+    border: 1px solid #006db7;  
+   }
+   .popcls{
+    right:0;
+}
+  .closed-btn {
+    position: absolute;
+    left: -9px;
+    top: -10px;
+    background: #006db7;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+  
+  &:hover{
+    background: #000000;
+  }
+}
+  
+  /* get on road price pop up radio fields css*/
+  .check-box-wrp {
+    column-count: 2;
+    border: 1px solid #ced4da;
+    padding: 10px 0 0;
+    margin-bottom: 14px;
+    background: #fff;
+    .checkbox-custom {
+      padding: 4px 0 5px 40px;
+      display: block;
+      margin-bottom: 15px!important;
+        .checkmark {
+            top: 6px;
+            left: 13px;
+            border-radius: 50%;
+            &:after {
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: 10px;
+              height: 10px;
+              border: solid white;
+              border-radius: 50%;
+            }
+        }
+    }
+}
+
+  
+  
+  
+  @media (max-width: 991px){
+    .headerMain .headerMain-top nav.navbar .mobileMenubarIcons .mobileSellBtn {
+      background: #006DB7;
+      padding: 5px 16px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      color: #fff;
+      margin-right: 5px;
+    }
+    
+  }
+  
+.sectionpadding10{
+    padding: 10px 0;
+  }
+  .tj-row{
+    margin-left: -15px;
+    margin-right: -15px;
+    @media(max-width:767px){
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+  }
+  .tj-col{
+    padding: 15px;
+    @media(max-width:767px){
+        padding: 8px;  
+    }
+  } 
+ 

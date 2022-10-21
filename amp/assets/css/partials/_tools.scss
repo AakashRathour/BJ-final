@@ -1,0 +1,33 @@
+.toolsBlock{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    .toolsBlock-main{
+        flex:0 0 12.5%;
+        max-width: 12.5%;
+        @media (max-width:1150px){
+            flex: none;
+            max-width: none;
+            width: 140px;
+        }
+       .toolsBlock-inner{
+            background-color: #fff;
+            padding: 12px 5px 9px;
+            margin: 1px 0;
+            border: 1px dashed transparent;
+            transition: .2s ease-in-out;
+            amp-img{
+                margin-bottom: 10px;
+            }
+            p{
+                margin: 0;
+                @include oneline;
+            }
+            &:hover{
+                border: 1px dashed $primaryclr;
+                transition: .2s ease-in-out;
+            }
+       }
+    }
+}

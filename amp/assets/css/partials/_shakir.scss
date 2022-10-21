@@ -1,0 +1,39 @@
+.greybg{
+    .brandsBlock {
+        column-count: 2;
+    }
+}
+.mobileSellBtn {
+    background: #006db7;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    color: #fff;
+    margin-right: 5px;
+}
+.newTruckBlock-inner{
+    .newTruckBlock-btn {
+        background: #006db7;
+        border: 1px solid $primaryclr;
+        color: #fff;
+    }
+    &:hover {
+        .newTruckBlock-btn{
+        background: #333333;
+        border: 1px solid #333333;
+    }
+    }
+}
+.compareBlock-inner{
+    .compareBlock-btn{
+      border: 1px solid $primaryclr;
+      background:$primaryclr;
+      color: #fff;
+     }
+      &:hover {
+        .compareBlock-btn {
+            background: #333333;
+            border: 1px solid #333333;
+        }
+      }
+  }

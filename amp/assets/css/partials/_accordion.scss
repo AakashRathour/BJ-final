@@ -1,0 +1,83 @@
+.accordion-block{
+    .accordion-inner{
+        margin-bottom: 20px;
+        border-radius: 3px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .accordion-header{
+            font-size: 15px;
+            padding: 15px 35px 15px 15px;
+            border:0;
+            margin-bottom: 0;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: '';
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+            }
+            &[aria-expanded="false"]{
+                &:before{
+                    background-image: url("https://trucks.tractorjunction.com/assets/images/icons/plus.svg");
+                }
+            }
+            &[aria-expanded="true"]{
+                &:before{
+                    background-image: url("https://trucks.tractorjunction.com/assets/images/icons/minus.svg");
+                }
+            }
+        }
+        .accordion-content{
+            padding: 12px 15px;
+            border-top: 1px solid #ececec;
+            h4{
+                font-size: 15px;
+                margin-bottom: 0;
+                font-weight: normal;
+            }
+        }
+    }
+}
+.variant-inner{
+    .variant-header{
+        border: 0;
+        border-top: 1px solid #ddd;
+        background-color: #f6f6f6;
+        position: relative;
+        padding: 8px 35px 8px 15px;
+        &:before{
+            position: absolute;
+            content: '';
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-size: contain;
+        }
+        &[aria-expanded="false"]{
+            &:before{
+                background-image: url("https://trucks.tractorjunction.com/assets/images/icons/plus.svg");
+            }
+        }
+        &[aria-expanded="true"]{
+            &:before{
+                background-image: url("https://trucks.tractorjunction.com/assets/images/icons/minus.svg");
+            }
+        }
+    }
+    .variant-content{
+        div{
+            max-height: 200px;
+            overflow-y: auto;
+            table{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

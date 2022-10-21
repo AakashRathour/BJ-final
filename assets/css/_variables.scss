@@ -1,0 +1,32 @@
+$primaryclr: #E77B35;
+$black:#000000;
+$lightGray:#F9F9F9;
+$light-bg:#eaeaea;
+$lightblue: #D4E9FA;
+$secondaryclr: #707070;
+$linkclr: #0288d1;
+$bodyclr: #212529;
+$tab-color:#FFF2E9;
+$premiumclr:#FFBF69;
+$lightfont: TJ-regular;
+$boldfont: TJ-bold;
+$BJ-regular: BJ-regular;
+$BJ-exbold: BJ-exbold;
+$BJ-exlight: BJ-exlightt;
+$BJ-black: BJ-black;
+$BJ-bold: BJ-bold;
+$BJ-semibold: BJ-semibold;
+$BJ-light: BJ-light;
+$BJ-medium: BJ-medium;
+$offwhitetext: rgba(255,255,255,.8);
+@mixin oneline {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+@mixin twoline {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

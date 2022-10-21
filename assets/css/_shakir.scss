@@ -1,0 +1,1470 @@
+.brandsBlock-single {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media (min-width: 451px) and (max-width: 650px) {
+    .brandsBlock-single {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+@media (min-width: 651px) and (max-width: 900px) {
+    .brandsBlock-single {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+.topSellButton {
+    .header-sell-btn {
+        background-color: $primaryclr;
+        color: #fff;
+        padding: 9px 22px;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-family: TJ-bold;
+        letter-spacing: 1px;
+        :hover {
+            color: #fff;
+            background-color: #333;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+.explore-slider {
+    .newTruckBlock-content {
+        padding: 10px 5px 5px 5px;
+        background: #fff;
+    }
+    button:focus {
+        outline: none;
+    }
+    .slick-prev {
+        color: transparent;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border: none;
+        background: #ffffff;
+        opacity: 0.6;
+        border-radius: 50%;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-prev {
+        img {
+            transform: rotate(90deg);
+        }
+        :hover {
+            opacity: 1;
+        }
+    }
+    .slick-next {
+        color: transparent;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border: none;
+        background: #ffffff;
+        opacity: 0.6;
+        border: none;
+        border-radius: 50%;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            transform: rotate(270deg);
+        }
+        :hover {
+            opacity: 1;
+        }
+    }
+}
+.add-txt-btn {
+    padding: 5px;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+}
+.ad-pop {
+    position: fixed;
+    right: -300px;
+    z-index: 99999;
+    top: 70%;
+    transform: translateY(-50%);
+    background: #fff;
+    transition: 0.5s;
+    border: 1px solid $primaryclr;
+}
+.popcls {
+    right: 0;
+}
+.closed-btn {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    background: $primaryclr;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+    &:hover {
+        background: #000000;
+    }
+}
+.check-box-wrp {
+    column-count: 2;
+    border: 1px solid #ced4da;
+    padding: 10px 0 0;
+    margin-bottom: 14px;
+    background: #fff;
+    .checkbox-custom {
+        padding: 4px 0 5px 40px;
+        display: block;
+        margin-bottom: 15px !important;
+        .checkmark {
+            top: 6px;
+            left: 13px;
+            border-radius: 50%;
+            &:after {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 10px;
+                height: 10px;
+                border: solid white;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .headerMain .headerMain-top nav.navbar .mobileMenubarIcons .mobileSellBtn {
+        background: #006db7;
+        padding: 5px 16px;
+        text-transform: uppercase;
+        border-radius: 25px;
+        color: #fff;
+        margin-right: 5px;
+    }
+}
+.newTruckBlock-inner{
+    .newTruckBlock-btn {
+        background: $primaryclr;
+        border: 1px solid $primaryclr;
+        color: #fff;
+        font-size: 16px;
+        font-family: $BJ-medium;
+        border-radius: 10px;
+    }
+    &:hover {
+        .newTruckBlock-btn{
+            
+        background: #EB630B;
+        border: 1px solid #EB630B;
+
+    }
+    }
+}
+.compareBlock-inner{
+    .compareBlock-btn{
+      border: 2px solid $primaryclr;
+      background:transparent;
+      color: $primaryclr;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: $BJ-medium;
+     }
+      &:hover {
+        .compareBlock-btn {
+            background: #333333;
+            border: 1px solid #333333;
+        }
+      }
+  }
+
+
+
+  .truck-single-new {
+    .newTruckSingle-right{
+        p
+    {
+        display: inline-block;
+        margin-right: 3px;
+    }
+}
+}
+.truck-single-new{
+    .sectionHeading{
+        margin-bottom: 10px;
+    }
+    
+.newTruckSingle-top {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    .star-rating {
+        color: #333333;
+        background-color: transparent!important;
+        font-size: 13px;
+        text-transform: capitalize;
+        padding: 0 8px 0 0px;
+        display: flex;
+      align-items: center;
+img
+{
+    filter: initial;
+    width: auto;
+    height: 24px;
+    margin-right: 5px;    
+}
+
+}
+.rate-truck{
+    background-color: transparent;
+    color: #006DB7;
+    font-size: 13px;
+}
+}
+.newTruckSingle-right
+    .newTruckSingle-anchor {
+        margin-top: 20px;
+    }
+
+}
+
+
+  @media (max-width: 767px) {
+    
+    
+    .truck-single-new {
+        .newTruckSingle-right{    
+            .newTruckSingle-anchor{
+                margin-top: 15px;
+            }
+    .floating-anchor {
+     .row {
+        .col-6{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+   }    
+}
+}
+}
+    .floating-anchor{
+            bottom: -110px;
+            transition: 0.5s;
+        }
+        .roadpopcls{
+            bottom: 0px;
+        }
+        .truck-single-new{
+            .newTruckSingle-top {
+                margin-bottom: 10px;
+            .star-rating {
+                img {
+                margin-right: 3px;
+            }
+        }
+        }  
+    }
+  }
+  
+  //   tooltip css
+
+.tooltip-content-wrp{
+    position: absolute;
+    top: 30px;
+    max-width: 320px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 3px;
+    background-color: #333;
+    z-index: 99;
+    display: none;
+    font-size: 12px;
+    p{
+        font-size: 13px;
+        color: #fff;
+        line-height: 22px;
+        font-family: 'TJ-regular';
+        margin-bottom: 0;
+    }
+    
+&:before{
+    border: solid;
+    border-color:#333 transparent;
+    border-width: 0px 8px 10px 8px;
+    content: "";
+    left: 15px;
+    top: -8px;
+    position: absolute;   
+}
+}
+.title-tooltip-wrp {
+    
+        &:hover 
+        .tooltip-content-wrp {
+            display: block;
+        }
+    
+}
+
+//  Bike Junction css
+
+.search-input-wrp.search-new{
+   display: block;
+   max-width: 500px;
+   flex-basis: 60%;
+   @media (min-width: 1620px){
+    max-width: 700px;
+    } 
+   .serach-btn-wrp{
+       margin-left: 35px;
+        .serach-inpf{
+            color: #A7A7A7;
+            font-size: 18px;
+            background: #F9F9F9;
+            padding: 0 15px 0 60px;
+            border-radius: 6px;
+            border: 3px solid #A7A7A7;
+            line-height: 43px;
+            position: relative;
+                z-index: 99;
+            @media(max-width:991px){
+                padding: 0 10px 0 34px;
+                font-size: 16px;
+                border: 2px solid #A7A7A7;
+                height: 40px;
+                line-height: 38px;
+            }  
+        }
+        .serach-img{
+            left: 25px;
+            @media(max-width:767px){
+                left: 14px;
+            }
+            img{
+                height: 22px;
+                @media(max-width:767px){
+                    height: 17px;
+                }
+            }
+        }
+   }
+}
+.headerMain.newmain-header {
+    padding-top: 25px;
+    @media (min-width: 1620px){
+        padding-top: 50px;
+    }
+    @media (max-width: 767px){
+        padding-top: 10px;
+    }
+    .headerMain-top{
+         nav.navbar{
+             .navbar-nav{
+                 .nav-item {
+                    .dropdown-menu{
+                        border-top:none;
+                        top: 65px;
+                        width: 300px;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        padding: 20px 20px 20px 20px;
+                        border-radius: 10px;
+                        @media (min-width: 1620px){
+                            width: 380px;
+                            padding: 20px 30px 20px 30px;  
+                        }
+                        @media (max-width: 767px){
+                            border-top:none;
+                            top: initial;
+                            width: initial;
+                            box-shadow: none;
+                            padding: 0;
+                            border-radius: 10px; 
+                            height: 100%!important;
+                        }
+                        li{
+                            &:nth-last-of-type(1){
+                                
+                                a{
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                        
+                        .dropdown-item{
+                            font-size: 16px;
+                            
+                            @media (min-width: 1620px){
+                                font-size: 18px;
+                            }
+                            @media (max-width: 767px){
+                                font-size: 16px;
+                                color: $secondaryclr;
+                            }  
+                        } 
+                    }
+                    .nav-link{    
+                        line-height: initial;
+                        font-size: 16px;
+                        padding: 25px 40px 25px 0;
+                        text-transform: capitalize;
+                        font-family: $BJ-regular;
+
+                        @media (min-width: 1620px){
+                            font-size: 18px;
+                            padding: 40px 60px 40px 0;
+                        }
+                        @media (max-width: 767px){
+                            line-height: 40px;
+                            font-size: 16px;
+                            padding: 4px 0;
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.new-lang-wrp{
+    li{
+        &:nth-child(2){
+            border-right: 2px solid #000000;
+            .dropdown-nav-menu{
+             width: 225px!important;   
+             a{
+                &:last-child{
+                    border-bottom: none!important;
+                }
+             }         
+            }
+        }
+        @media (max-width: 991px){
+            .webLangOptionSpan{
+                padding: 0!important;
+                display: grid;
+                font-size: 10px;
+                span{
+                    padding: 0!important;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+            &:nth-child(2){
+                border-right:none;
+            }
+            &:last-of-type{
+                display: none;
+            }
+            .dropdown-menu{
+                position:absolute;
+                left: inherit;
+                right: 0;
+            }
+        }
+        a{
+            font-size: 16px;
+            @media (min-width: 1620px){
+                font-size: 18px;   
+            }
+            span{
+                img{
+                    height: 25px;
+                    width: 25px!important;
+                }
+            }
+        }
+    }
+}
+
+// Home Page
+.sliderBlock{
+    .carousel-indicators{
+        height: 35px;
+        li{
+           width: 15px;
+           height: 15px;
+           border-radius: 50%;
+           opacity: 1;
+        }
+        li.active{
+            opacity: .5;
+            width: 20px;
+           height: 20px;
+           margin-top: -3px;
+         }
+    }
+}
+.filterHome-inner {
+    .tab-content{
+        .tab-pane{
+            .form-group{
+                input{
+                    border: none;
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+    }
+}
+.newTruckBlock-inner{
+    .newTruckBlock-content{
+        .newTruckBlock-price {
+            color: #000;
+            font-size: 20px;
+            font-family: $BJ-medium;
+        }
+        .special-feature{
+            display: flex;
+            gap: 10px;
+            span{
+                display: flex;
+                align-items: center;
+                color: $secondaryclr;
+                font-family: $BJ-medium;
+                img{
+                    margin-right: 7px;
+                    width: initial;
+                }
+            }
+        }
+    }
+}
+.brands-slider , .newbike-slider{
+    margin: 0;
+    .owl-nav{
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            outline: none;
+            border: none;
+            &:focus{
+                outline:none;
+            }
+            @media (max-width:991px){
+                left: 25px;
+            }
+        }
+        .owl-next{
+         right: 0;
+         left: auto;
+         @media (max-width:991px){
+            right: 18px;
+        }
+         span{
+           text-indent: -9999999px;
+           display: block;
+           position: relative;
+           &:after{
+            content: "";
+            position: absolute;
+            background: url(../images/icons/next-n.png);
+            text-indent: 0;
+            display: block;
+            height: 47px;
+            width: 47px;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            @media (max-width:1199px){
+                right: -30px;
+            }
+           }
+         }
+        }
+        .owl-prev{
+            span{
+              text-indent: -9999999px;
+              position: relative;
+              display: block;
+              &:after{
+                content: "";
+                position: absolute;
+                background: url(../images/icons/next-n.png);
+                text-indent: 0;
+                display: block;
+                height: 47px;
+                width: 47px;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%) rotate(-180deg);
+                @media (max-width:1199px){
+                    right: -30px;
+                }
+               }
+            }
+           }
+    }
+}
+.comp-title-brand {
+    padding: 25px 12px 5px;
+    .compare-brand {
+        font-size: 16px;
+        font-family: $BJ-medium;
+        color: $primaryclr;
+    }
+    .compare-title {
+        font-size: 20px;
+        font-family: $BJ-medium;
+        color: $black;
+    }
+}
+.newbikekBlock{
+ display: flex;
+ flex-wrap: wrap;
+ 
+    @media (max-width: 1199px){
+        margin-left: -8px;
+    margin-right: -8px;
+    }
+    .newTruckBlock-main {
+        flex: 0 0 20%;
+        max-width: 20%;
+       
+        @media (max-width: 1199px){
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 0 8px;
+        }
+        @media (max-width: 991px){
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 8px;
+        }
+        @media (max-width: 480px){
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 8px;
+        }
+        .newTruckBlock-inner{
+            .newTruckBlock-content{
+                padding: 15px 30px;
+                border-radius: 10px;
+                .newbikeBlock-title {
+                    font-size: 16px;
+                    font-family: $BJ-medium;
+                    color: $secondaryclr;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.bikeRange-row{
+    // margin-left: -20px;
+    // margin-right: -20px;
+    @media (max-width: 991px) {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .bikeRange-column{
+        @media (min-width: 992px) {
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+            margin-top: 20px;
+        }
+        .filterBlock-chips{
+            border: 1px solid $primaryclr;
+            color: $primaryclr;
+            font-size: 16px;
+            font-family: $BJ-semibold;
+        }
+    }
+}
+.city-find-sec{
+    .citi-title{
+        font-size: 20px;
+        font-family: $BJ-medium;
+        color: $black;
+    }
+    .search-input{
+        position: relative;
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 25px;
+        }
+        input{
+            color: #A7A7A7;
+            font-size: 18px;
+            background: #F9F9F9;
+            padding: 0 15px 0 75px;
+            border-radius: 6px;
+            border: 3px solid #A7A7A7;
+            line-height: 43px;
+            max-width: 450px;
+            display: block;
+            width: 100%;
+        }
+    }
+    .brandsBlock{
+        @media (max-width: 1199px) {
+            margin-left: -8px;
+            margin-right: -8px; 
+        }
+        .bikecityBlock-main{
+            -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%;
+            max-width: 16.666%;
+            margin-top: 30px;
+            @media (max-width: 1199px) {
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
+                padding:0 8px;
+            }
+            @media (max-width: 991px) {
+                -ms-flex: 0 0 33.33%;
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+                padding:0 8px;
+            }
+            @media (max-width: 480px) {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding:0 8px;
+            }
+            .bikecityBlock-inner{
+                background-color: $lightGray;
+                padding: 12px 0 0px;
+                margin: 1px 0;
+                border: 1px dashed transparent;
+                transition: 0.2s ease-in-out;
+                &:hover{
+                border: 1px dashed #579090;
+                transition: 0.2s ease-in-out;
+                }
+                img{
+                height: 100px;
+                margin: 0 auto 15px;
+                width: auto !important;
+                }
+                p{
+                    font-size: 16px;
+                    color: $black;
+                    font-family: $BJ-medium;
+                    margin-bottom: 0;
+                    background: #fff;
+                    height: 67px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+.viewall{
+    a {
+        font-size: 16px;
+        font-family: $BJ-medium;
+    }
+}
+
+// New truck listing
+.border-radius-10{
+  border-radius: 10px;
+}
+.new-bike-listing-row{
+    .bike-listing-right{
+        .Select-icons-wrp {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            .form-control{
+                background-color: #ffffff;
+                background-image: url(../images/icons/drop-arrow.png);
+                width: 95px;
+            }
+        }
+        .compareBlock-new{
+            overflow-x: initial;
+            white-space: initial;
+            flex-wrap: wrap;
+            @media (max-width: 991px) {
+                overflow-x: auto;
+                white-space:nowrap; 
+                flex-wrap: initial;
+            }
+            .compareBlock-main{
+                margin-bottom: 16px;
+                .compareBlock-inner{
+                    .compareBlock-img {
+                        .comparisonImg{
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bike-listing-left{
+        .truckFilterBlock{
+            background-color: #fbfbfb;
+            .brands-search-wrp{
+                .search-input{
+                    position: relative;
+                    margin: 15px 0;
+                    .search-icon {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 25px;
+                        img{
+                            height: 20px;
+                        }
+                    }
+                    input{
+                        color: #A7A7A7;
+                        font-size: 18px;
+                        background: #ffffff;
+                        padding: 0 15px 0 75px;
+                        line-height: 43px;
+                        display: block;
+                        width: 100%;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        .accordionBlock {
+            .accordionBlock-inner{
+                .accordionBlock-header{
+                    h3{
+                     font-size: 20px;
+                     font-family: $BJ-bold;   
+                    }
+                }
+            }
+            .accordionBlock-body{
+                .checkbox-customImg{
+                    .checkmark{
+                      border: none;
+                    }
+                }
+                span.rangeValues{
+                    font-size: 20px;
+                    font-family: $BJ-semibold!important;  
+                }
+                .price-tab-wrp{
+                    .pricetab {
+                        border: 1px solid $primaryclr;
+                        border-radius: 10px;
+                        text-align: center;
+                        font-size: 12px;
+                        color: $primaryclr;
+                        font-family: $BJ-medium;
+                        padding: 8px 0;
+                        display: block;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// price slider
+
+
+.range-slider {
+    position: relative;
+    padding-bottom: 25px;
+    .rangeValues {
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+  
+  input[type=range] {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: $primaryclr;
+    border: none;
+    border-radius: 3px;
+  
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fbfbfb;
+    border: 2px solid $primaryclr;
+    margin-top: -10px;
+      cursor: pointer;
+        position: relative;
+      z-index: 1;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: $primaryclr;
+  }
+  
+  input[type=range]::-moz-range-track {
+
+    height: 5px;
+    background: $primaryclr;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: $primaryclr;
+  }
+  
+  
+  /*hide the outline behind the border*/
+  
+  input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }
+  
+  input[type=range]::-ms-track {
+    height: 5px;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+      z-index: -4;
+  
+  }
+  
+  input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+  }
+  
+  input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+  }
+  
+  input[type=range]::-ms-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: $primaryclr;
+  }
+  
+  input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+  }
+  
+  input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+  }
+  
+  .video-cliprow{
+      .video-clipr-main{
+        .video-clip {
+            position: relative;
+            margin-bottom: 20px;
+            span{
+                color: #ffffff;
+                font-size: 12;
+                font-family: $BJ-medium;
+                position: absolute;
+                padding: 17px 35px;
+                background-color: $black;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;             
+            }
+            iframe{
+                border-radius: 10px;
+            }
+            .video-title {
+                font-size: 12px;
+                color: #000;
+                font-weight: 600;
+            }
+        }
+      }
+  }
+
+
+
+//   new header
+span.bike-icon{
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    display: none;
+    color: #fff;
+    img {
+        height: 14px;
+        display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+    @media (max-width: 991px){
+        display: block;
+     }
+}
+.main-menu-wrp{
+    @media (max-width: 991px){
+        a#navbarDropdown1:after {
+            border: 1px solid #24272c;
+            border-width: 0 0 2px 2px;
+            content: "";
+            font-size: 0;
+            height: 8px;
+            line-height: 0;
+            pointer-events: none;
+            position: absolute;
+            right: 25px;
+            top: 18px;
+            transform: rotate(-135deg);
+            width: 8px;
+            display: block; 
+        }
+    }
+}
+.mobileBlockMenu-top{
+    .back-arrow{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        img {
+            width: 20px;
+            height: 15px;
+            position: relative;
+            margin-right: 10px;
+        }
+    }
+} 
+
+@media (max-width: 991px){
+.mobileActive {
+    background: #fff !important;
+    height: auto !important;
+    opacity: 1 !important;
+    overflow: auto !important;
+    padding: 0 20px 80px 20px !important;
+    pointer-events: fill !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 99 !important;
+}
+}
+.truckFilterBlock-btns{
+    margin-bottom: 10px;
+   .filter-btn{
+    font-size: 28px;
+   }
+   .clear-filter-btn{
+    font-size: 14px;
+    font-family: BJ-medium;
+    color: #006DB7;
+    text-decoration: underline;
+    span{
+        img{
+            margin-top: -3px;
+        }
+    }
+   }
+}
+@media (max-width: 991px) {
+    .mobile-scrollcls{
+     white-space: nowrap;
+     overflow-x: auto;
+     flex-wrap: initial;
+     .newTruckBlock-main{
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+     }
+    }
+}
+.tabs-content .b-tabcls:not(:first-child) {
+    display: none;
+}
+.headerMain.fixed{
+    padding-top: 10px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.3s;
+    .headerMain-top{
+        nav.navbar{
+            .nav-item{
+                .nav-link {
+                    padding: 15px 30px 15px 0;
+                }
+                .dropdown-menu{
+                    top: 51px;
+                }
+            }
+            .navbar-brand{
+                img {
+                    width: 90px; transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+    .search-input-wrp.search-new{
+        .serach-btn-wrp{
+            .serach-inpf {
+                line-height: 35px;
+                height: 35px;
+                border: 1px solid;
+                padding: 0 15px 0 35px;
+                font-size:16px;
+            }
+            .serach-img {
+                width: 17px;
+                top: 16px;
+                left: 15px;
+                img{
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+.new-bike-listing-row{
+    position: relative;
+    .bike-listing-left {
+        position: relative;
+        .bikestiky{
+            position: sticky;
+            top: 140px;
+        }
+    }
+    .bike-listing-left {
+        .accordionBlock{
+            .accordionBlock-inner{
+                .accordionBlock-header {
+                    h3 {
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+.new-bike-listing-row.act-scroll{
+    .bike-listing-left {
+        .truckFilterBlock {
+            height: calc(100vh - 28vh);
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 0em;
+                height: 2em;
+            }
+        }
+    }
+}
+.truckFilterBlock{
+    .accordionBlock {
+        .accordionBlock-inner {
+            .accordionBlock-body{
+                height: 360px;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    width: 0em;
+                    height: 2em;
+                }
+            }
+            div#filter-collapseOne {
+                .accordionBlock-body {
+                    height: 300px;
+                }
+            }
+            div#filter-collapseTwo {
+                .accordionBlock-body {
+                    height: 200px;
+                }
+            }
+            div#filter-collapseThree {
+                .accordionBlock-body {
+                    height: 250px;
+                }
+            }
+            div#filter-collapseFour {
+                .accordionBlock-body {
+                    height: 80px;
+                }
+            }
+            div#filter-collapseFive {
+                .accordionBlock-body {
+                    height: 150px;
+                }
+            }
+        }
+    }
+.accordionBlock-inner.truckFilterBlock-inner {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: -10px;
+        filter: blur(14px);
+        background: rgba(255 , 255 , 255 , 1);
+        z-index: 1;
+    }
+}
+}
+
+.filderbrands-row{
+    .filter-title-wrp {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+        margin: 20px;
+        padding-bottom: 8px;
+        .filter-title-img {
+            font-size: 20px;
+            font-family: $BJ-bold;
+            color: $black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .filter-closed{
+            .langMobileBlockClose{
+                position: initial;
+                img {
+                    width: 18px;
+                }
+            }
+        }
+    }
+    .filterbrands-nav {
+        display: flex;
+        gap: 20px;
+        height: calc(100vh - 350px);
+        .tabs-nav {
+            flex-basis: 40%;
+            ul{
+                li{
+                    border-bottom:none;
+                    font-size: 16px;
+                    font-family: $BJ-medium;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    a{
+                        padding: 10px 0px 10px 20px;
+                        color: $black;
+                    }
+                }
+                li.active{
+                    background-color: $black;
+                    color: #fff;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .tabs-content {
+            flex-basis: 60%;
+            padding-right: 20px;
+            overflow-y: scroll;
+            padding-bottom: 10px;
+            .brands-search-wrp1{
+                .bodyFilter{
+                    p{
+                        font-family: $BJ-medium;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    .confirm-btn {
+        text-align: center;
+        margin: 0 15px 15px;
+        position: relative;
+        a {
+            font-size: 16px;
+            font-family: $BJ-medium;
+            text-align: center;
+            background: #D1512D;
+            display: block;
+            padding: 18px;
+            color: #fff;
+            border-radius: 15px;
+        }
+    }
+    .filter-mil {
+        padding: 0 20px 30px 20px;
+        .checkbox-custom{
+            font-size: 16px;
+            font-family: $BJ-medium;
+        }
+    }
+}
+
+//banner pop up scss
+.brands-popup-wrp{
+    padding: 0 20px;
+    height: 310px;
+    overflow-y: auto;
+}
+.budgetBanner-popup-row{
+    padding: 0 20px;
+    height: 310px;
+    overflow-y: auto;
+    .filter-title-wrp{
+        .filter-closed{
+            .langMobileBlockClose{
+                img {
+                    width: 15px;
+                }
+            }
+        }
+    }
+    .range-slider{
+        .rangeValues{
+            font-size: 20px;
+            font-family: $BJ-semibold;
+            padding: 20px 0 15px;
+            border-bottom: 1px solid #000;
+            margin-bottom: 40px;
+        }
+    }
+    .price-tab-wrp{
+        .budget-tab{
+            .pricetab{
+                border: 1px solid #579090;
+                color: #579090;
+                font-size: 16px;
+                font-family: BJ-semibold;
+                display: block;
+                background-color: #fff;
+                padding: 10px 5px;
+                border-radius: 8px;
+                margin: 6px 0 10px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.sliderBlock-filterHome{
+   .filterHome-inner{
+        .tab-content{
+            form{
+                .form-group{
+                    .mob-select-inpt-wrp {
+                            margin: 30px 0;
+                            display: none;
+                            @media (max-width: 991px){
+                                display: block;
+                            .mob-select-inpt {
+                                border-bottom: 2px solid #000;
+                                display: block;
+                                font-size: 16px;
+                                line-height: 30px;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                background-image: url(../images/icons/caret-down.svg);
+                                background-repeat: no-repeat;
+                                background-size: 11px;
+                                background-position-x: 97.5%;
+                                background-position-y: 55%;
+                                border: none;
+                                border-bottom: 1px solid #000;
+                            }
+                        }
+                    }
+                    select.form-control{
+                        @media (max-width: 991px){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+   }
+}
+.form-control:focus{
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+@media (max-width: 767px){
+    .newbike-slider{
+        padding-right: 90px;
+        .owl-stage-outer{
+            overflow: visible !important;
+            .tj-col{
+                padding: 0px;
+                
+            }
+            
+        }
+    }
+    .owl-nav{
+        display: none!important;
+    }
+    
+}

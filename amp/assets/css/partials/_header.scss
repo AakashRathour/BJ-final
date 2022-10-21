@@ -1,0 +1,338 @@
+.headerMain-bottom {
+    border-top: 1px solid rgba(36, 39, 44, 0.1);
+    white-space: nowrap;
+    overflow-x: auto;
+    .headerMain-bottomLinks {
+        display: inline-block;
+        line-height: 42px;
+        margin-right: 1rem;
+        position: relative;
+        opacity: 0.85;
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primaryclr;
+            transition: 0.1s ease-in-out;
+        }
+        &:hover {
+            &:before {
+                width: 100%;
+                background-color: $primaryclr;
+                transition: 0.1s ease-in-out;
+            }
+        }
+    }
+}
+.tj-headerTop{
+    height:60px;
+    background:#fff;
+    position:relative;
+    top:0;
+    left:0;
+    z-index:997;
+    width:100%;
+    .tj-logo {
+        width:100px;
+        float:left;
+        height:46px;
+        background:url('https://truck.tctrj.in/assets/images/trucklogo.png') no-repeat;
+        background-size:contain;
+        margin:6px 0 0 10px;
+    }
+    .headerBlock-menu {
+        border:0;
+        float:left;
+        height:46px;
+        margin:7px 6px 7px 0;
+        padding:0;
+        width:18px;
+        background:0 0
+    }
+    .headerBlock-menu [data-icon=menu] {
+        color:#24272c;
+        position:relative;
+        display:block;
+        width:18px;
+        height:2px;
+        background-color:$primaryclr;
+        &:before {
+            content:"";
+            position:absolute;
+            top:-5px;
+            left:0;
+            width:21px;
+            height:2px;
+            background-color:$primaryclr;
+        }
+        &:after {
+            content:"";
+            position:absolute;
+            top:5px;
+            left:0;
+            width:15px;
+            height:2px;
+            background-color:$primaryclr;
+        }
+    }
+    .searchBlock{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        float:right;
+        padding:5px 10px;
+        margin:10px -10px 0 0;
+        .searchBlock-icon{
+            padding:0;
+            background:$primaryclr;
+            border:0;
+            height:35px;
+            width:35px;
+            text-align:center;
+            border-radius:50%;
+            line-height:48px;
+        }
+    }
+    #tjampsearch {
+        width:100%;
+        background:$secondaryclr;
+        position:absolute;
+        left:0;
+        top:0;
+        height:60px;
+        padding-right:5px;
+        z-index:999;
+        .backArrow {
+            position:absolute;
+            width:42px;
+            height:42px;
+            top:10px;
+            left:0;
+            z-index:99
+        }
+    }
+    #tjampsearchResults {
+        box-shadow:0 0 5px rgba(0,0,0,.4);
+        background:#fff;
+        margin-right:-10px;
+        margin-left:-10px;
+        position:relative;
+        z-index:1000;
+        top:-7px;
+        left:0;
+        overflow:hidden;
+        width:88%;
+        amp-list {
+            width:100%;
+            .dataList{
+                height:200px;
+                overflow-x:hidden;
+                overflow-y:scroll;
+                span{
+                    display:block;
+                    padding:12px 15px;
+                    border-bottom:1px solid #eee;
+                    color:#24272c;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    #tjampsearch [data-arrow-left] {
+        width:13px;
+        height:13px;
+        border-width:2px 2px 0 0;
+        border-style:solid;
+        margin:10px 0;
+        color:#fff;
+        position:absolute;
+        left:18px;
+        top:4px;
+        transform:rotate(-135deg);
+        &:before{
+            border-radius:2px;
+            position:absolute;
+            width:16px;
+            height:3px;
+            right:0;
+            top:-2px;
+            transform-origin:right top;
+            box-shadow:inset 0 0 0 32px;
+            content:"";
+            transform:rotate(-45deg);
+        }
+    }
+    #tjampsearch input[type=text] {
+        border:none;
+        background:#fff;
+        border-radius:3px;
+        width:80%;
+        margin:14px 0 0 12%;
+        height:34px;
+        padding-left:14px;
+        outline:0;
+        color:#24272c
+    }
+}
+
+.ampSidebar{
+width: 300px;
+.ampSidebar-close{
+    text-align: right;
+    padding: 15px;
+}
+.menuAmp{
+    section{
+        header{
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+        }
+    }
+    .menuAmp-item{
+        margin-bottom: 0;
+        .menuAmp-link{
+            border-bottom: 1px solid #eee;
+            display: block;
+            color: #333;
+            padding: 0 15px;
+            text-transform: uppercase;
+            line-height: 50px;
+            &:hover{
+                color: $primaryclr;
+            }
+        }
+        .ampDropdown{
+            header{
+                &::before{
+                    position: absolute;
+                    content: '+';
+                    right: 15px;
+                    display: inline-block;
+                    font-size: 20px;
+                    top: 44%;
+                    transform: translateY(-44%);
+                }
+                &[aria-expanded="true"]{
+                    &::before{
+                        content: '-';
+                    }
+                }
+            }
+            ul{
+                .menuAmp-link{
+                    text-transform: capitalize;
+                    padding: 10px 30px;
+                    color: $secondaryclr;
+                }
+            }
+        }
+    }
+}
+}
+.buySellBtn{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+a{
+    background-color: $secondaryclr;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 12px 8px;
+    &:last-child{
+        background-color: $primaryclr;
+    }
+}
+}
+.sidebarSocial{
+margin-top: 30px;
+text-align: center;
+p{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+a{
+    margin-right: 8px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+}
+.sidebarTop{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 25px 10px;
+amp-img{
+    margin-right: 10px;
+}
+}
+amp-sidebar{
+    background-color: #fff;
+    section{
+        header.menuAmp-link{
+            background-color: #fff;
+        }
+    }
+}
+.pageInfo-breadcrumbs {
+    background-color: #f6f6f6;
+    .container-mid{
+        width: 100%;
+    }
+    ul{
+        white-space: nowrap;
+        overflow-x: auto;
+        margin-bottom: 0;
+        li{
+            display: inline-block;
+            position: relative;
+            padding-right: 13px;
+            margin-right: 4px;
+            margin-bottom: 0;
+            font-size: 12px;
+            &::after {
+                position: absolute;
+                content: "";
+                border: 1px solid rgba(36, 39, 44, 0.7);
+                border-width: 0 0 1px 1px;
+                width: 5px;
+                height: 5px;
+                transform: rotate(-135deg);
+                right: 2px;
+                top: 44%;
+            }
+            &:last-child {
+                padding-right: 0;
+                margin-right: 0;
+                &::after {
+                    display: none;
+                }
+            }
+            a,span{
+                display: inline-block;
+                line-height: 34px;
+            }
+        }
+    }
+}
+.ampSidebar .menuAmp .menuAmp-item .ampDropdown ul .menuAmp-link{
+    border-bottom: 1px solid #eee;
+    display: block;
+    color: #333;
+    padding: 0 15px;
+    text-transform: uppercase;
+    line-height: 50px;
+    &:hover{
+        color: $primaryclr;
+    }
+}
+  
+  

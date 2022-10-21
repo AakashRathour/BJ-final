@@ -1,0 +1,142 @@
+$primaryclr:#006db7;
+$secondaryclr:#003B73;
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+amp-img{
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+amp-story-grid-layer{
+    padding: 30px 20px;
+}
+.boldfont{
+    font-weight: 600;
+}
+.e-boldfont{
+    font-weight: 700;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: #fff;
+}
+.text-uppercase
+{
+    text-transform: uppercase;
+}
+.flex-item-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flex-item-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 27px;
+    p{
+        font-size: 27px;
+    }
+}
+h2,h3{
+    font-size: 24px;
+    p{
+        font-size: 24px;
+    }
+}
+h3{
+    font-size: 20px;
+    p{
+        font-size: 20px;
+    }
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.story-top-overlay{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.5) 40%, rgba(0,0,0,0) 60%);
+        z-index: -1;
+    }
+}
+.story-middle-overlay{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: -1;
+    }
+}
+.story-bottom-overlay{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0,0,0,.5) 40%, rgba(0,0,0,0) 60%);
+        z-index: -1;
+    }
+}
+.fix-item{
+    position: absolute;
+}
+.bottom-30{
+    bottom:30px;
+}
+.bottom-0{
+    bottom:0;
+}
+.top-0{
+    top:0;
+}
+.top-50{
+    top:50%;
+    transform: translateY(-50%);
+}
+.bottom-40{
+    bottom:40px;
+}
+.top-40{
+    top:40px;
+}
+.p-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pt-20{
+    padding-top: 20px;
+}

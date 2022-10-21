@@ -1,0 +1,17 @@
+{
+  "name": "truckjunction_web_ui",
+  "version": "1.0.0",
+  "description": "Truck Junction Web Application UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch assets/css -o assets/css",
+    "compile": "node-sass assets/css -o assets/css",
+    "production": "node-sass assets/css -o ../public/assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

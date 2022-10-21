@@ -1,0 +1,813 @@
+.compareBlock{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    .compareBlock-main{
+        flex:0 0 33.333333%;
+        max-width: 33.333333%;
+        @media (max-width:1150px){
+            flex: none;
+            max-width: none;
+            width: 320px;
+        }
+    }
+}
+.vsBlock{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: 'VS';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-color: $secondaryclr;
+        text-align: center;
+        font-family: $boldfont;
+        color: #fff;
+        border-radius: 50%;
+        padding-top: 14px;
+        font-size: 18px;
+    }
+}
+.compareBlock-inner{
+    margin: 1px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    .compareBlock-img{
+        position: relative;
+        display: flex;
+        &::before{
+            position: absolute;
+            content: 'VS';
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            width: 35px;
+            height: 35px;
+            background-color: $primaryclr;
+            text-align: center;
+            font-family: $BJ-bold;
+            color: #fff;
+            border-radius: 50%;
+            padding-top: 6px;
+        }
+        .compareBlock-left,.compareBlock-right{
+            width: 50%;
+            display: inline-block;
+            p{
+                margin: 8px 0 0 0;
+                padding: 0 12px;
+                @include oneline;
+                font-family: $BJ-semibold;
+                font-size: 16px;
+            }
+        }
+        .comparisonImg{
+            height: 130px;
+            width: 100%;
+            @media (max-width:1150px){
+                height: 100px;
+            }
+        }
+    }
+    .compareBlock-content{
+        padding: 30px 12px 12px;
+    }
+    &:hover{
+        .compareBlock-btn{
+            background-color: $primaryclr;
+            color: #fff;
+        }
+    }
+}
+.startCompare{
+    .startCompare-inner{
+        margin: 1px 0;
+        padding-top:12px;
+        .addTruck-title{
+            font-size: 18px;
+        }
+        .startCompare-img{
+            background-color: #fff;
+            text-align: center;
+            position: relative;
+            padding: 10px 0;
+            img{
+                height: 160px;
+                @media (max-width:1150px){
+                    height: 140px;
+                }
+            }
+        }
+        .startCompare-form{
+            background-color: #f6f6f6;
+            padding: 15px;
+        }
+    }
+}
+.compareResult{
+    .accordionBlock-inner{
+        .accordionBlock-header{
+            h3{
+                background-color: $primaryclr!important;
+                color: #fff;
+                &::before{
+                    filter: invert(100%);
+                }
+            }
+        }
+        .accordionBlock-body{
+            .compareResult-inner{
+                border: 1px solid #ddd;
+                border-top: 0;
+                padding: 10px;
+                &:nth-child(2n){
+                    background-color: #f6f6f6;
+                }
+                .compare-property{
+                    margin-bottom: 15px!important;
+                    font-size: 15px;
+                    @media (max-width:991px){
+                        text-align: center;
+                        margin-bottom: 10px!important;
+                        font-size: 14px;
+                    }
+                }
+                .col-6{
+                    .compare-value{
+                        font-size: 15px;
+                        @media (max-width:991px){
+                            font-size: 13px;
+                        }
+                    }
+                    &:last-child{
+                        p{
+                            @media (max-width:991px){
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ***************
+#more {display: none;}
+.start-compare-bike{
+    padding-bottom: 25px;
+    @media(max-width:767px){
+        padding-bottom: 10px;
+    }
+    .compare-bike-Content{
+        padding-bottom: 32px;
+        padding-top: 28px;
+        @media(max-width:1199px){
+            padding-bottom: 22px;
+            padding-top: 20px;
+        }
+        @media(max-width:767px){
+            padding-top: 10px;
+            padding-bottom: 12px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #A7A7A7;
+
+            a{
+                color: #006DB7;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                  color: #000;
+                }
+            }
+        }
+        h2{
+            @media(max-width:767px){
+                font-size: 20px;
+            }
+        }
+        .collapse {
+            transition: 0.3s;
+        }
+        .sectionHeading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media(max-width:767px){
+                margin-bottom: 12px;
+            }
+            
+        }
+    }
+    .carCompare-row{
+        .carCompare-main {
+            display: flex;
+            gap: 40px;
+            @media(min-width:1620px){
+                gap: 60px;
+            }
+            @media(max-width:800px){
+                white-space: nowrap;
+                overflow-x: auto;
+                flex-direction: row;
+            }
+            @media(max-width:767px){
+                gap: 15px;
+            }
+            a{
+                color: #006DB7;
+                transition: 0.3s;
+                &:hover{
+                  color: #000;
+                }
+            }
+            .carCompare-inner {
+                background: #FBFBFB;
+                flex-basis: 20%;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                position: relative;
+                @media(max-width:1260px){
+                    flex-basis: 21%;
+                }
+                
+                @media(max-width:800px){
+                    width: 150px;
+                    flex: none;
+                    max-width: none;
+                    margin: 2px;
+                }
+                &:after {
+                    content: "Vs";
+                    position: absolute;
+                    top: 50%;
+                    right: -37px;
+                    transform: translateY(-50%);
+                    display: block;
+                    background: #2D4059;
+                    color: #fff;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    border-radius: 50%;
+                    font-weight: 700;
+                    font-size: 16px;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    z-index: 1;
+                    @media(min-width:1600px){
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        right: -55px;
+                    }
+                    @media(max-width:767px){
+                        right: -55px;
+                        transform: translate(-50%,-50%);
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;     
+                        font-size: 12px;
+                    }
+                }&:last-child::after{
+                    display: none;
+                }
+                .carCompare-icon {
+                    height: 270px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    @media(max-width:1199px){
+                        height: 200px;
+                    }
+                    @media(max-width:800px){
+                        height: 90px;
+                    }
+                    img {
+                        @media(max-width:1199px){
+                            max-width: 100px;
+                        }
+                        @media(max-width:800px){
+                            max-width: 67px;
+                        }
+                    }
+                }
+                .carCompare-icon-title {
+                    text-align: center;
+                    padding-bottom: 10px;
+                    p{
+                        font-size: 20px;
+                        font-weight: 400;
+                        @media(max-width:1199px){
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .bike-select {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                .carCompare-content-detail{
+                    padding: 20px 18px;
+                    @media(max-width:1199px){
+                        padding: 15px 15px;
+                    }
+                    @media(max-width:510px){
+                        padding: 10px;
+                    }
+                    p {
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 20px;
+                        letter-spacing: -0.5px;
+                        font-family: $BJ-medium;
+                        @media(max-width:1199px){
+                            font-size: 16px;
+                            line-height: 16px;
+                        }
+                        @media(max-width:510px){
+                            font-size: 12px;
+                            line-height: 12px;
+                        }
+                        a{
+                            color: #707070;
+                        }
+                    }
+                    p.compre-brand-name {
+                        margin-bottom: 10px !important;
+                    }
+                    p.compre-brand-subtitle {
+                        margin-bottom: 5px !important;
+                        font-weight: 500;
+                        font-family: BJ-medium;
+                        color: $black;
+                        @media(max-width:510px){
+                            margin-bottom: 10px !important;
+                        }
+                    }
+                    p.compre-varient {
+                        font-size: 16px !important;
+                        margin-bottom: 23px !important;
+                        font-family: BJ-medium;
+                        @media(max-width:510px){
+                            font-size: 12px !important;
+                            display: none;
+                        }
+                    }
+                    p.compre-price {
+                        font-family: BJ-semibold;
+                        color: $black;
+                        font-size: 16px;
+                        letter-spacing: -0.5px;
+                        @media(max-width:510px){
+                            font-size: 12px;
+                        } 
+                    }
+                }
+                .close-compare {
+                    position: absolute;
+                    right: 4px;
+                    img{
+                        cursor: pointer;
+                        width: 14px;
+                        height: 14px;
+                        transition: 0.3s;
+                        &:hover{
+                            filter: brightness(0.5);
+                        }
+                    }
+                }
+            }
+        }
+        .carCompare-main.carCompare-main-plus{
+            @media(max-width:610px){
+                gap: 9px;
+             }
+            .carCompare-inner{
+                @media(max-width:900px){
+                    &:last-child,&:nth-last-child(2){display: none;}
+                    &:nth-child(2){
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                @media(max-width:800px){
+                   width: initial;
+                }
+                @media(max-width:610px){
+                    padding-bottom: 10px;
+                    min-height: 200px;
+                    .carCompare-icon {
+                        height: auto;
+                        min-height: 162px;
+                    }
+                 }
+                &:after{
+                    top: 42%;
+                    @media(max-width:610px){
+                        top: 38%;
+                     }
+                     @media(max-width:510px){
+                        top: 35%;
+                     }
+                }
+                
+            }
+            @media(max-width:767px){
+                overflow-x: hidden;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+.carCompare-main.carCompare-main-plus .carCompare-inner {
+    flex-basis: 22% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    @media(max-width:900px){
+        flex-basis: 48% !important;
+    }
+    @media(max-width:510px){
+        background: #FBFBFB !important;
+        box-shadow: 0px 0px 4px 0 rgba(0,0,0,0.1) !important;
+    }
+    @media(max-width:480px){
+        flex-basis: 47% !important;
+    }
+    .carCompare-inner-in {
+        background: #FBFBFB;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+        min-height: 310px;
+        @media(max-width:1199px){
+            min-height: 245px;
+        }
+        @media(max-width:510px){
+            min-height: initial;
+            background: transparent;
+            box-shadow: none;
+        }
+        .carCompare-image{
+            img {
+                max-height: 174px;
+                width: 100%;
+                overflow: hidden;
+                @media(max-width:430px){
+                    max-height: 85px;
+                }
+            }
+        } 
+    }
+    a.btn-road-price.borderBtn.newTruckBlock-btn {
+        background: #E77B35;
+        color: #fff;
+        border-radius: 8px;
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        @media(max-width:767px){
+            margin-top: 15px;
+        }
+        @media(max-width:510px){
+            font-size: 14px;
+            height: 30px;
+            padding: 0;
+            line-height: 28px;
+            width: 90%;
+            margin: auto;
+        }
+        &:hover{
+            background: #2D4059;
+        }
+    }
+}
+
+.modal-open {
+    padding-right: 0 !important;
+    overflow-y: auto;
+}
+// Popup Css Model
+
+.bikemodel{
+    .modal-dialog {
+        max-width: 525px;
+        box-sizing: border-box;
+        .modal-content {
+            padding: 40px 50px 45px;
+            border-radius: 50px;
+            @media(max-width:767px){
+                padding: 15px 15px 20px;
+                border-radius: 8px;
+            }
+            .brand-header{
+                h3 {
+                    font-size: 30px;
+                    display: inline-block;
+                    border-bottom: 1px solid #000;
+                    color: #2D4059;
+                    @media(max-width:767px){
+                        font-size: 23px;
+                    }
+                    img {
+                        position: relative;
+                        top: -2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .accordionBlock-body{
+                label.checkbox-custom {
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: 500;
+                    @media(max-width:767px){
+                        font-size: 17px;
+                    }
+                    input:checked ~ .checkmark {
+                        background-color: #1D1238;
+                    }
+                }
+            } 
+        }
+    }
+} 
+section.sectionpadding25.b-t-1 {
+    border-top: 0;
+}
+section.sectionpadding25 {
+    @media(max-width:767px){
+      padding-top: 5px;
+    }
+}
+
+
+// Accordion css
+
+.acc-container {
+    margin-bottom: 30px;
+    @media(max-width:767px){
+        margin-bottom: 5px;
+    }
+    .acc{
+        padding-top: 5px;
+        @media(max-width:767px){
+            padding-bottom: 16px !important;
+        }
+        .acc-head{
+            cursor: pointer;
+            position: relative;
+            &:before{
+                //content: '';
+                position: absolute;
+                top: 34%;
+                right: 15px;
+                width: 13px;
+                height: 13px;
+                transition: all .3s;
+                background-image:url('../../assets/images/icons/plus.svg');
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:right center;
+                @media(max-width:767px){
+                    background-image:url('../../assets/images/icons/dwn-arw.png');
+                    width: 14px;
+                    height: 7px;
+                    top: 46%;
+                    right: 0;
+                }
+            }
+            &:after{
+                //content: '';
+                position: absolute;
+                top: 34%;
+                right: 15px;
+                width: 13px;
+                height: 13px;
+                transition: all .3s;
+                background-position:right center;
+                background-image:url('../../assets/images/icons/minus.svg');
+                background-size:cover;
+                background-repeat:no-repeat;
+                display: none;
+                @media(max-width:767px){
+                    background-image:url('../../assets/images/icons/rgt-arw.png');
+                    width: 7px;
+                    height: 14px;
+                    top: 38%;
+                    right: 1px;
+                }
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: -0.5px;
+                color: #232323;
+                padding: 10px 0;
+                font-family: $BJ-medium;
+                @media(max-width:767px){
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        .acc-content{
+            //display: none;
+            .propName-content{
+                display: none;
+                p {
+                    font-family: BJ-medium;
+                    font-size: 10px;
+                    line-height: 20px;
+                    letter-spacing: -0.5px;
+                    color: #707070;
+                    margin: 0 0 3px;
+                }
+                .propName-wrap {
+                    border-bottom: 1px solid #707070;
+                    display: flex;
+                    margin-bottom: 10px;
+                    @media(max-width:767px){
+                        justify-content: space-between;
+                    }
+                    .propName-inner {
+                        flex-basis: 29%;
+                        padding-bottom: 3px;
+                        @media(max-width:767px){
+                            flex-basis: initial;
+                        }
+                        h6{
+                            font-family: BJ-medium;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.5px;
+                            color: $black;
+                        }
+                    }
+                }
+                &:nth-child(-n+4) {
+                    display: block;
+                }
+            } 
+            a.seeMore {
+                font-family: BJ-medium;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: -0.5px;
+                color: blue;
+                display: inline-block;
+                &:hover{
+                    color: $black;
+                }
+            }
+        
+        }
+        .acc-head.active:before{display: none;}
+        .acc-head.active:after{display: block;}
+    }
+    .compare-bike-pormotion {
+        padding-top: 15px;
+        background: #D9D9D9;
+        min-height: 106px;
+        @media(max-width:767px){
+            padding-top: 0;
+            margin-top: 3px;
+            // min-height: 116px;
+            min-height: 90px;
+            background: #707070;
+            border-radius: 8px;
+            
+        }
+        .compare-emi{
+            display: none;
+            @media(max-width:767px){
+                display: block;
+                padding: 30px 8px 8px;
+                color: #fff;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: -0.5px;
+                color: #FFFFFF;
+                font-family: $BJ-medium;
+            }
+            .compare-emi-btn{
+                margin-top: 18px;
+                a {
+                    background: #FFFFFF;
+                    border: 1px solid #E77B35;
+                    border-radius: 8px;
+                    display: block;
+                    width: 100%;
+                    max-width: 300px;
+                    font-size: 16px;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    color: #E77B35;
+                    height: 38px;
+                    line-height: 38px;
+                    transition: 0.3s;
+                    font-family: $BJ-medium;
+                    &:hover{
+                        background: #E77B35;
+                        color: $lightGray;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+.hide-compare{
+    span.margin-l {
+        margin-left: 10px;
+        vertical-align: middle;
+        font-family: $BJ-regular;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -0.5px;
+        color: $black;
+        @media(max-width:1199px){
+            font-size: 16px;
+            line-height: 16px;
+        }
+        @media(max-width:767px){
+            margin-left: 0px;
+            font-size: 12px;
+        }
+    }
+    .el-switch {
+        display: inline-block;
+        font-size: 100%;
+        height: 1.6em;
+        position: relative;
+        > input[type="checkbox"] {
+            display: none;
+            &:checked + .el-switch-style:before {
+                left: 58%;
+            }
+        }
+        .el-switch-style {
+            height: 10px;
+            left: 0;
+            background: #D9D9D9;
+            -webkit-border-radius: 0.8em;
+            border-radius: 0.8em;
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            width: 35px;
+            cursor: pointer;
+            &:before {
+                display: block;
+                content: '';
+                height: 20px;
+                position: absolute;
+                width: 20px;
+                background-color: #E77B35;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                left: 0;
+                top: -5px;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    .el-switch.el-switch-green > input[type="checkbox"]:checked + .el-switch-style {
+        background-color: #2D4059;
+    }
+}
+.hide-compare.desk{
+    display: none;
+}
+.hide-compare.mob{
+    display: none;
+    @media(max-width:767px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    }
+}

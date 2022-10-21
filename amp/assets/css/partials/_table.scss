@@ -1,0 +1,32 @@
+.table-block{
+    overflow-x: auto;
+}
+table{
+    border: 1px solid #dee2e6;
+    width: 100%;
+    margin-bottom: 12px;
+    td,th{
+        border: 1px solid #dee2e6;
+        padding: 12px .75rem;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+.table-bordered {
+	tr{
+        td{
+            border:0;
+            border-bottom: 1px solid #dee2e6;
+            border-right: 1px solid #dee2e6;
+            &:last-child{
+                border-right: 0;
+            }
+        }
+        &:last-child{
+            td{
+                border-bottom: 0;
+            }
+        }
+    }
+}

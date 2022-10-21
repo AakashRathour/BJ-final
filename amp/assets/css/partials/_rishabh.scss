@@ -1,0 +1,19 @@
+.filterBlock{
+    .filterBlockMain{
+        .filterBlock-chips
+        {
+            border-radius: 8px;
+        }
+    }
+}
+
+@media(max-width:550px){
+    .brandsMainBlock{
+        .brandsMain {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    } 
+    
+    
+}

@@ -1,0 +1,23 @@
+.profileBlock-left{
+    padding: 15px;
+    img{
+        width: 85px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+.profileBlock-right{
+    padding: 15px;
+    h4{
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+}
+.product-type{
+    background-color: $secondaryclr;
+    color: #fff;
+    padding: 3px 10px 4px;
+    border-radius: 3px;
+}

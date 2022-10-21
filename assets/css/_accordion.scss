@@ -1,0 +1,87 @@
+.accordionBlock{
+    .accordionBlock-inner{
+        border-radius: 3px;
+        margin-bottom: 20px;
+        .accordionBlock-header{
+            h2,h3{
+                background: #fbfbfb;
+                padding: 15px 35px 15px 15px;
+                margin: 0;
+                font-size: 16px;
+                font-family: $BJ-medium;
+                text-transform: capitalize;
+                position: relative;
+                @media (max-width:767px){
+                    text-transform: unset;
+                }
+                &:before{
+                    position: absolute;
+                    content: '';
+                    right: 15px;
+                    top:17px;
+                    width: 13px;
+                    height: 3px;
+                    background-image: url('../images/icons/minus-n.png');
+                    background-size: 13px;
+                }
+                &[aria-expanded="false"]{
+                    &:before{
+                        background-image: url('../images/icons/plus-n.png');
+                        height: 13px;
+                    }
+                }
+            }
+        }
+        .accordionBlock-body{
+            padding: 12px 15px;
+            background-color: #fbfbfb;
+            p,h4{
+                font-size: 16px;
+                color: $secondaryclr;
+                font-family: $BJ-regular;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.accordionFaq-sec{
+   .accordionBlock-inner{
+      .accordionBlock-header{
+            h3{
+                position: relative;
+                padding: 15px 35px 15px 30px;
+                &:after{
+                    position: absolute;
+                    content:"Q."; 
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%); 
+                    font-size: 16px;
+                    color: $black;
+                    font-family: $BJ-semibold;
+                }
+            }
+        }
+        .accordionBlock-body{
+            h4{
+                position: relative;
+                padding-left: 15px;
+                &:after{
+                    position: absolute;
+                    content:"A."; 
+                    left: -5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 16px;
+                    color: $black;
+                    font-family: $BJ-semibold; 
+                } 
+            }
+        }
+   }
+}

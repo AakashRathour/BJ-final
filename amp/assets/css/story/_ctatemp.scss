@@ -1,0 +1,24 @@
+.cta-btn1{
+    background-image: linear-gradient(to left, $primaryclr, $secondaryclr);
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    line-height: 130px;
+    text-decoration: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+.cta-btn2{
+    background-image: linear-gradient(to left, $primaryclr, $secondaryclr);
+    height: 60px;
+    display: block;
+    line-height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.bottom-m-10{
+    bottom: -10px;
+}
+.bottom-m-20{
+    bottom: -20px;
+}

@@ -1,0 +1,55 @@
+.tab-block{
+    .tabs-with-selector{
+        border-bottom: 1px solid #ddd;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    amp-selector[role=tablist].tabs-with-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    amp-selector[role=tablist].tabs-with-flex [role=tab] {
+        flex-grow: 1;
+        text-align: center;
+        padding: var(--space-1);
+    }
+    amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
+        outline: none;
+        border-bottom: 3px solid $primaryclr;
+        color: $primaryclr;
+    }
+    amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
+        display: none;
+        width: 100%;
+        order: 1;
+        padding: var(--space-4);
+    }
+    amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
+        display: block;
+    }
+    amp-selector[role=tablist].tabs-with-selector {
+        display: flex;
+    }
+    amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
+        outline: none;
+        border-bottom: 3px solid $primaryclr;
+        color: $primaryclr;
+    }
+    amp-selector[role=tablist].tabs-with-selector {
+        display: flex;
+    }
+    amp-selector[role=tablist].tabs-with-selector [role=tab] {
+      text-align: center;
+      padding-bottom: 8px;
+      margin-right: 15px;
+      text-transform: uppercase;
+    }
+    amp-selector.tabpanels [role=tabpanel] {
+      display: none;
+      padding: var(--space-4);
+    }
+    amp-selector.tabpanels [role=tabpanel][selected] {
+      outline: none;
+      display: block;
+    }
+}
